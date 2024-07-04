@@ -1,0 +1,108 @@
+/* Header.css */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 35px;
+    background-color: #23329B; /* Purple background color */
+    color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    gap: 50px;
+}
+
+.navbar .nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.navbar .nav-link:hover {
+    text-decoration: underline;
+    color: #ffcc00; /* Yellow on hover */
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.header-button {
+    background-color: transparent;
+    background-color: #ffcc00;
+    border: 2px solid white;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.header-button:hover {
+    background-color: white; /* Yellow on hover */
+    color: #23329B; /* Purple text color on hover */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+    .navbar {
+        gap: 30px;
+    }
+
+    .header-button {
+        padding: 8px 16px;
+    }
+
+    .buttons {
+        padding-right: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        padding: 20px;
+    }
+
+    .navbar {
+        gap: 20px;
+    }
+
+    .header-button {
+        padding: 6px 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        padding: 15px;
+    }
+
+    .header .logo {
+        font-size: 20px;
+    }
+
+    .navbar {
+        gap: 15px;
+    }
+
+    .navbar .nav-link {
+        font-size: 16px;
+    }
+
+    .header-button {
+        font-size: 12px;
+        padding: 5px 10px;
+    }
+}

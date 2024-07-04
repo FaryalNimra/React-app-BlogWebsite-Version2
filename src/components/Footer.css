@@ -1,0 +1,122 @@
+.footer {
+background-color: #23329B; /* Dark background color */   
+font-family: Montserrat, sans-serif; 
+position:static; /* Fixed position */
+bottom: 0; /* Stick to the bottom of the viewport */
+height: 400px;
+}
+
+.box-container {
+    height: 300px;
+    display: flex;
+    background-color: #23329B; 
+    justify-content: space-between; /* Distribute boxes evenly */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.box {
+    height: 300px;
+    flex: 1; /* Each box takes equal space */
+    margin: 10px; /* Adjust margin as needed */
+    padding: 20px; /* Adjust padding as needed */
+    background-color: #23329B;
+    color: white;
+    border-radius: 10px; /* Optional: Rounded corners for boxes */
+}
+
+ h4 {
+    font-size: 30px; /* Font size for headings */
+    color: white; /* Heading text color */
+    margin-bottom: 5px; /* Space below heading */
+    font-family: Montserrat, sans-serif; /* Font family for headings */
+}
+
+.box p,
+.box a,
+.box .additional-info p {
+    font-size: 15px; /* Font size for paragraphs */
+    color: white; /* Paragraph and link text color */
+    line-height: 1.5; /* Line height for readability */
+    font-family: Montserrat, sans-serif; /* Font family for paragraphs */
+}
+
+.box a {
+    display: block; /* Display as block elements */
+    color: white; /* Link text color */
+    margin-bottom: 5px; /* Space below each link */
+    text-decoration: none; /* Remove underline */
+    font-family: Montserrat, sans-serif; /* Font family for links */
+}
+
+
+.icons-container {
+    display: flex; /* Display icons in a flex container */
+    align-items: center; /* Align items vertically */
+}
+
+.icon3 {
+    width: 30px; /* Increased width */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 15px; /* Increased spacing between icons */
+}
+
+.subscribe-container {
+    display: flex; /* Display input and button in a flex container */
+    align-items: center; /* Align items vertically */
+    border: 1px solid #ccc; /* Border for the container */
+    border-radius: 25px; /* Rounded corners */
+    padding: 10px; /* Padding inside the container */
+    background-color: #f0f0f0; /* Background color for the container */
+    margin-top: 20px; /* Top margin for the container */
+    width: 20%; /* Adjust width as needed */
+}
+
+.subscribe-input {
+    border: none; /* Remove default border */
+    outline: none; /* Remove default outline */
+    padding: 10px; /* Padding inside the input */
+    border-radius: 20px; /* Rounded corners */
+    flex: 1; /* Allow input to take available space */
+    margin-right: 1px; /* Space between input and button */
+}
+
+.subscribe-button {
+    padding: 10px 20px; /* Padding inside the button */
+    background-color: #e95500; /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* Remove default border */
+    border-radius: 20px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+.subscribe-button:hover {
+    background-color: #e0e0e0; /* Slightly darker background on hover */
+}
+@media screen and (max-width: 768px) {
+    .footer {
+        font-size: 13px;
+        height: auto; /* Adjust height to fit content */
+        padding: 20px; /* Add padding for spacing */
+        text-align: center; /* Center align content */
+    }
+
+    .box-container {
+        height: auto; /* Adjust height to fit content */
+        flex-direction: column; /* Stack boxes vertically */
+        justify-content: center; /* Center align boxes */
+    }
+
+    .box {
+        margin: 10px 0; /* Adjust margin for spacing between boxes */
+    }
+
+    .subscribe-container {
+        width: 100%; /* Full width for subscribe container */
+    }
+
+    .subscribe-input {
+        width: 70%; /* Adjust input width */
+        margin-right: 0; /* Remove margin between input and button */
+    }
+}

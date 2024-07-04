@@ -1,0 +1,97 @@
+.rubik-bold-heading {
+    margin-top: 3px;
+    padding-left: 130px;
+    padding-right: 130px;
+    font-size: 25px;
+    font-family: Montserrat, sans-serif; 
+    font-weight: bold;
+    text-align: justify;
+  
+}
+.rubik-bold-heading1 {
+    font-size: 16px;
+    font-family: Montserrat, sans-serif; 
+    font-weight: bold;
+    text-align: justify;
+    padding-left: 140px;/* Align paragraphs justified */
+    padding-right: 140px;
+}
+.rubik-bold-heading:hover {
+    
+    transform: scale(1.01);
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+    .rubik-bold-heading1:hover {
+        transform: scale(1.01);
+        transition: transform 0.3s ease-in-out;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        font-family: Montserrat, sans-serif; 
+        padding-left: 130px;
+        padding-right: 130px;
+        }
+.content-image1 {
+    max-width: 77%; /* Adjust the maximum width as per your design */
+    height: auto;
+    padding-left: 130px;
+    /* Ensures the image maintains its aspect ratio */
+    
+}
+.content-image1:hover {
+
+    transform: scale(1.01);
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+    
+.paragraph-container {
+    margin-top: 5px; /* Adjust top margin as needed */
+}
+.paragraph-container:hover {
+    background-color: white;
+    transform: scale(1.01);
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+    
+.blog-paragraph {
+    margin-bottom: 10px; /* Adjust bottom margin as needed */
+    text-align: justify;
+    margin-left: 10px; 
+    margin-right: 10px;/* Align paragraphs justified */
+    font-size: 14px;
+    font-family: Montserrat, sans-serif; 
+    padding-left: 130px;
+    padding-right: 130px;
+}
+
+/* Media query for headings and paragraphs */
+@media screen and (max-width: 768px) {
+    .rubik-bold-heading{
+        padding-left: 30px; /* Adjust padding for smaller screens */
+        padding-right: 30px; /* Adjust padding for smaller screens */
+        text-align: left;
+        font-size: 25px;
+
+
+    }
+    .rubik-bold-heading1{
+        padding-left: 30px; /* Adjust padding for smaller screens */
+        padding-right: 30px; /* Adjust padding for smaller screens */
+        text-align: left;
+
+    }
+    .blog-paragraph {
+        padding-left: 20px; /* Adjust padding for smaller screens */
+        padding-right: 20px; /* Adjust padding for smaller screens */
+        text-align: left; /* Align text to the left on smaller screens */
+    }
+
+    .content-image1 {
+        max-width: 100%; /* Make images full width on smaller screens */
+        height: auto; /* Ensure the image maintains its aspect ratio */
+        padding-left: 0; /* Remove left padding for images */
+        padding-right: 0; /* Remove right padding for images */
+    }
+}
+
